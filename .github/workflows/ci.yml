@@ -3,7 +3,7 @@ name: Build addons
 on:
   release:
     types: [published]
-
+  push:
   workflow_dispatch:
 
 jobs:
