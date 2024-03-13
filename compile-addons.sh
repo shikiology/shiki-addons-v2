@@ -56,6 +56,7 @@ function compile-addon() {
     echo "Running compile script"
     pushd . >/dev/null
     cd "${1}"
+    chmod +x ./${COMPILESCRIPT}
     ./${COMPILESCRIPT}
     popd >/dev/null
   fi
